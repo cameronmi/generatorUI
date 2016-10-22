@@ -17,7 +17,7 @@
       function pickFromArray(ary) {
         return ary[Math.floor(Math.random()*ary.length)];
       }
-      function onclick() {
+      function generate() {
         var text1 = pickFromArray(['第一格1','第一格2','第一格3','第一格4']);
         var text2 = pickFromArray(['第二格1','第二格2','第二格3','第二格4','第二格5',
                                    '第二格6','第二格7','第二格8','第二格9']);
@@ -44,10 +44,12 @@
       </header>
       <section>
         <p>Hello World</p>
-        <span id='slot1'></span>
-        <span id='slot2'></span>
-        <span id='slot3'></span>
-        <input type='button' onclick='onclick()' value='Generate'>  </input>
+        <div>
+          <span id='slot1'></span>
+          <span id='slot2'></span>
+          <span id='slot3'></span>
+        </div>
+        <input type='button' onclick='generate()' value='Generate'>  </input>
       </section>
     </div>
     <footer>
