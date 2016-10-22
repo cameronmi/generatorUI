@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -34,15 +35,14 @@
     <div class="wrapper">
       <header class="without-description">
         <h1>Generator</h1>
-        <p></p>
-        <ul>
-          <li><span id='slot1'></span></li>
-          <li><span id='slot2'></span></li>
-          <li><span id='slot3'></span></li>
-        </ul>
       </header>
       <section>
-        <input type='button' onclick='generate()' value='Generate'>  </input>
+        <ul class='slot-container'>
+          <li class='slot-item'><span id='slot1'></span></li>
+          <li class='slot-item'><span id='slot2'></span></li>
+          <li class='slot-item'><span id='slot3'></span></li>
+        </ul>
+        <input type='button' onclick='generate()' value='Generate'/>
       </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
