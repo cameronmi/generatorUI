@@ -48,7 +48,7 @@ ul.slot-container:before {
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
 }
 ul.slot-container li {
-  width: 200px;
+  width: 199px;
   float: left;
   border-right: 1px solid #3A7CBE;
   height: 200px;
@@ -57,12 +57,12 @@ ul.slot-container li.single {
   border: none;
 }
 ul.slot-container li + li {
-  width: 200px;
+  width: 198px;
   border-left: 1px solid #8BBEF3;
 }
 ul.slot-container li + li + li {
   border-right: none;
-  width: 200px;
+  width: 199px;
 }
 ul.slot-container span {
   line-height: 1;
