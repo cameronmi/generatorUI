@@ -1,0 +1,14 @@
+.slot-container {
+  height: 200px;
+}
+
+.slot-container .slot-item {
+  height: 200px;
+  line-height: 200px;
+}
+
+.slot-container .slot-item span{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 14px;
+}
