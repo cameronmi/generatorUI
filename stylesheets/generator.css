@@ -86,3 +86,7 @@ ul.slot-container span strong {
   left: calc(50% - 20px);
   width: 40px;
 }
+
+#id {
+  padding: 10px;
+}
