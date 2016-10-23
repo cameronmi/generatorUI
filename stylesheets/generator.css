@@ -90,9 +90,14 @@ ul.slot-container span {
 
 #generate-button {
   position: relative;
-  left: calc(50% - 20px);
-  width: 40px;
+  left: calc(50% - 35px);
+  width: 70px;
   margin: 30px 0;
+  border: 1px solid transparent;
+  font-size: 15px;
+  border-radius: .25rem;
+  background-color: white;
+  border-color: rgba(50,50,50,0.3);
 }
 
 #log {
