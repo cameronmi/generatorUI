@@ -13,6 +13,7 @@ function generate() {
   e.textContent = text1 + ' + ' + text2 + ' + ' + text3;
   var log = document.getElementById('log').firstElementChild;
   log.insertBefore(e, log.firstChild);
+  ga('send', 'event', 'Button', 'Click', 'generate');
 }
 
 function initApplication() {
