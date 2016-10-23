@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Generator by cameronmi</title>
+    <title>大B-拉霸機的正確使用方式</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
@@ -14,27 +14,12 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script>
-      function pickFromArray(ary) {
-        return ary[Math.floor(Math.random()*ary.length)];
-      }
-      function generate() {
-        var text1 = pickFromArray(['第一格1','第一格2','第一格3','第一格4']);
-        var text2 = pickFromArray(['第二格1','第二格2','第二格3','第二格4','第二格5',
-                                   '第二格6','第二格7','第二格8','第二格9']);
-        var text3 = pickFromArray(['第3格1','第3格2','第3格3','第3格4','第3格5',
-                                   '第3格6','第3格7','第3格8','第3格9','第3格10',
-                                   '第3格11','第3格12','第3格13','第3格14','第3格15']);
-        document.getElementById('slot1').textContent=text1;
-        document.getElementById('slot2').textContent=text2;
-        document.getElementById('slot3').textContent=text3;
-      }
-    </script>
+    <script rel='javascripts/generator.js'></script>
   </head>
   <body>
     <div class="wrapper">
       <header class="without-description">
-        <h1>Generator</h1>
+        <h1>大B-拉霸機的正確使用方式</h1>
       </header>
       <section>
         <ul class='slot-container'>
@@ -42,8 +27,10 @@
           <li class='slot-item'><span id='slot2'></span></li>
           <li class='slot-item'><span id='slot3'></span></li>
         </ul>
-        <input type='button' onclick='generate()' value='Generate'/>
+        <input type='button' onclick='generate()' value='產生'/>
       </section>
+      <div id='log'>
+      </div>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
