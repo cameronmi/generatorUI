@@ -4,10 +4,24 @@
   text-align: center;
 }
 
-.slot-container .slot-item span{
+.slot-container .slot-item > span {
+    width: 180px;
+    height: 175px;
+    background: white;
+    line-height: 175px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    bottom: 2px;
+    margin: 0;
+}
+
+#slot1, #slot2, #slot3 {
   display: inline-block;
   vertical-align: middle;
-  line-height: 14px;
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: -25px;
 }
 
 ul.slot-container {
@@ -65,28 +79,20 @@ ul.slot-container li + li + li {
   width: 199px;
 }
 ul.slot-container span {
-  line-height: 1;
-  font-size: 11px;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8);
+  color: #222;
+  color: rgba(32, 32, 32, 0.8);
   text-align: center;
   font-weight: 400;
-  padding-top: 6px;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
-}
-ul.slot-container span strong {
-  font-size: 14px;
-  display: block;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 -1px 0;
 }
 
 #generate-button {
   position: relative;
   left: calc(50% - 20px);
   width: 40px;
+  margin: 30px 0;
 }
 
-#id {
-  padding: 10px;
+#log {
+  padding: 5px;
 }
