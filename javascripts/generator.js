@@ -11,7 +11,7 @@ function generate() {
   document.getElementById('slot3').textContent=text3;
   var e = document.createElement('li')
   e.textContent = text1 + ' + ' + text2 + ' + ' + text3;
-  var log = document.getElementById('log').firstChild;
+  var log = document.getElementById('log').firstElementChild;
   log.insertBefore(e, log.firstChild);
 }
 
