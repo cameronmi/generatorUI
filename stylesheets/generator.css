@@ -103,3 +103,38 @@ ul.slot-container span {
 #log {
   padding: 5px;
 }
+@media screen and (max-width: 640px) {
+  .slot-container .slot-item {
+    height: 140px;
+    line-height: 140px;
+  }
+
+  .slot-container .slot-item > span {
+    width: 100px;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  #slot1, #slot2, #slot3 {
+    line-height: 15px;
+    font-size: 13px;
+    margin-top: -8px;
+  }
+
+  ul.slot-container {
+    width: 360px;
+    height: 140px;
+  }
+
+  ul.slot-container li {
+    width: 119px;
+  }
+  ul.slot-container li + li {
+    width: 118px;
+  }
+  ul.slot-container li + li + li {
+    width: 119px;
+  }
+}
+
+  
