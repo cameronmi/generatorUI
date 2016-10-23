@@ -9,9 +9,9 @@ function generate() {
   document.getElementById('slot1').textContent=text1;
   document.getElementById('slot2').textContent=text2;
   document.getElementById('slot3').textContent=text3;
-  var e = document.createElement('div')
+  var e = document.createElement('li')
   e.textContent = text1 + ' + ' + text2 + ' + ' + text3;
-  var log = document.getElementById('log');
+  var log = document.getElementById('log').firstChild;
   log.insertBefore(e, log.firstChild);
 }
 
@@ -26,7 +26,7 @@ function initApplication() {
       first = data[0];
       second = data[1];
       third = data[2];
-      document.getElementById('generate-button').disbaled = false;
+      document.getElementById('generate-button').removeAttribute('disabled');
     }
   };
 }
