@@ -24,16 +24,22 @@
       </header>
       <section>
         <ul class='slot-container'>
-          <li class='slot-item'><span id='slot1'></span></li>
-          <li class='slot-item'><span id='slot2'></span></li>
-          <li class='slot-item'><span id='slot3'></span></li>
+          <li class='slot-item'><span>
+            <span id='slot1'></span>
+          </span></li>
+          <li class='slot-item'><span>
+            <span id='slot2'></span>
+          </span></li>
+          <li class='slot-item'><span>
+            <span id='slot3'></span>
+          </span></li>
         </ul>
         <input type='button' onclick='generate()' id='generate-button' disabled='true' value='產生'/>
+        <hr>
+        <div id='log'>
+          <ul></ul>
+        </div>
       </section>
-      <hr>
-      <div id='log'>
-        <ul></ul>
-      </div>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
