@@ -64,7 +64,7 @@ ul.slot-container:before {
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
 }
 ul.slot-container li {
-  width: 199px;
+  width: calc(33.3333333333333333% - 1px);
   float: left;
   border-right: 1px solid #3A7CBE;
   height: 200px;
@@ -73,12 +73,12 @@ ul.slot-container li.single {
   border: none;
 }
 ul.slot-container li + li {
-  width: 198px;
+  width: calc(33.3333333333333333% - 2px);
   border-left: 1px solid #8BBEF3;
 }
 ul.slot-container li + li + li {
   border-right: none;
-  width: 199px;
+  width: calc(33.3333333333333333% - 1px);
 }
 ul.slot-container span {
   color: #222;
@@ -103,16 +103,18 @@ ul.slot-container span {
 #log {
   padding: 5px;
 }
+
 @media screen and (max-width: 640px) {
   .slot-container .slot-item {
-    height: 140px;
-    line-height: 140px;
+    height: 160px;
+    line-height: 160px;
   }
 
   .slot-container .slot-item > span {
-    width: 100px;
-    height: 120px;
-    line-height: 120px;
+    width: calc(100% - 10px);
+    height: 140px;
+    line-height: 140px;
+    bottom: 0;
   }
 
   #slot1, #slot2, #slot3 {
@@ -122,18 +124,17 @@ ul.slot-container span {
   }
 
   ul.slot-container {
-    width: 360px;
-    height: 140px;
+    width: 100%;
+    height: 160px;
+    margin: 20px 0 10px;
   }
 
   ul.slot-container li {
-    width: 119px;
+    height: 160px;
+    line-height: 160px;
   }
-  ul.slot-container li + li {
-    width: 118px;
-  }
-  ul.slot-container li + li + li {
-    width: 119px;
+  #generate-button {
+    font-size: 12px;
   }
 }
 
